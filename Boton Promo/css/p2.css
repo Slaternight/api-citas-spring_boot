@@ -1,0 +1,55 @@
+.profile-wishes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.profile-list {
+    display: grid;
+    gap: 5px;
+}
+
+.profile-field input {
+    width: 200px;
+}
+
+.profile-list p, h2{
+    color: #fff;
+}
+
+.profile-list{
+    background-color: #005CA5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comprar{
+    background-color: #005CA5;
+    border-radius: 15px;
+}
+
+.comprar p, h2, span{
+    color: #fff !important;
+}
+
+.card-info-2 h2, p{
+    color: #000 !important;
+}
+
+.producto{
+    display: flex !important;
+}
+
+.producto h2{
+    color: #000 !important;
+}
+
+.card-img img{
+    width: 100px;
+}

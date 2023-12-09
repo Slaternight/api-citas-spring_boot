@@ -1,0 +1,46 @@
+{
+    "content": "http://com.dataturks.a96-i23.open.s3.amazonaws.com/2c9fafb064277d86016431e33e4e003d/8186c3d1-e9d4-4550-8ec1-a062a7628787___0-26.jpg.jpeg",
+    "annotation": [{
+        "label": ["Face"],
+        "notes": "",
+        "points": [{
+            "x": 0.08615384615384615,
+            "y": 0.3063063063063063
+        }, {
+            "x": 0.1723076923076923,
+            "y": 0.45345345345345345
+        }],
+        "imageWidth": 650,
+        "imageHeight": 333
+    }, {
+        "label": ["Face"],
+        "notes": "",
+        "points": [{
+            "x": 0.583076923076923,
+            "y": 0.2912912912912913
+        }, {
+            "x": 0.6584615384615384,
+            "y": 0.46846846846846846
+        }],
+        "imageWidth": 650,
+        "imageHeight": 333
+    }],
+    "extras": null
+} {
+    "content": "http://com.dataturks.a96-i23.open.s3.amazonaws.com/2c9fafb064277d86016431e33e4e003d/d1c32c8e-8050-482d-a6c8-b101ccba5b65___0de0ee708a4a47039e441d488615ebb7.png",
+    "annotation": [{
+        "label": ["Face"],
+        "notes": "",
+        "points": [{
+            "x": 0.7053087757313109,
+            "y": 0.23260437375745527
+        }, {
+            "x": 0.7692307692307693,
+            "y": 0.36182902584493043
+        }],
+        "imageWidth": 1280,
+        "imageHeight": 697
+    }],
+    "extras": null
+} 
+It shows this message.

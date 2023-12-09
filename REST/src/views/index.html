@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Aplicación de Pacientes y Doctores</title>
+</head>
+<body>
+  <h1>Listado de Pacientes</h1>
+
+  <ul id="pacientes-list">
+    <!-- Aquí se mostrarán los pacientes -->
+  </ul>
+
+  <h1>Listado de Doctores</h1>
+
+  <ul id="doctores-list">
+    <!-- Aquí se mostrarán los doctores -->
+  </ul>
+
+  <script>
+    // Aquí puedes agregar JavaScript para hacer solicitudes a tu API REST y actualizar la página con los datos
+    // Ejemplo de solicitud GET utilizando Fetch API
+    fetch('/api/pacientes')
+      .then(response => response.json())
+      .then(data => {
+        const pacientesList = document.getElementById('pacientes-list');
+        data.forEach(paciente => {
+          const listItem = document.createElement('li');
+          listItem.textContent = `${paciente.nombre} ${paciente.apellido} (Edad: ${paciente.edad})`;
+          pacientesList.appendChild(listItem);
+        });
+      });
+
+    fetch('/api/doctores')
+      .then(response => response.json())
+      .then(data => {
+        const doctoresList = document.getElementById('doctores-list');
+        data.forEach(doctor => {
+          const listItem = document.createElement('li');
+          listItem.textContent = `${doctor.nombre} ${doctor.apellido} (Especialidad: ${doctor.especialidad})`;
+          doctoresList.appendChild(listItem);
+        });
+      });
+  </script>
+</body>
+</html>

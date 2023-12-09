@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personaliza tu mug</title>
+</head>
+<body>
+    <h1>Personaliza tu mug</h1>
+
+    <!-- Formulario de carga de imagen -->
+    <form id="imageUploadForm" enctype="multipart/form-data">
+        <input type="file" id="imageInput" accept="image/*">
+    </form>
+
+    <!-- Elemento donde se mostrará la imagen -->
+    <h2>Imagen en el mug:</h2>
+    <img id="mugImage" src="mug.png" alt="Mug personalizado">
+
+    <script>
+        // JavaScript para manejar la carga de imagen y visualización
+        const imageInput = document.getElementById("imageInput");
+        const mugImage = document.getElementById("mugImage");
+
+        imageInput.addEventListener("change", function() {
+            const file = imageInput.files[0];
+            if (file) {
+                const reader = new FileReader();
+
+                reader.onload = function(e) {
+                    // Muestra la imagen cargada en el elemento <img>
+                    mugImage.src = e.target.result;
+                };
+                
+                // Posibles nombres --  atomiko - atoms - kingclothe - kings - maquin - royalking -
+
+                // Lee la imagen como una URL de datos
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>

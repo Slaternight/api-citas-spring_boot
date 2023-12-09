@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/breadcrum.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <link rel="stylesheet" href="/css/tarjeta.css">
+    <script type="module">
+        import productos from '/js/productos.js';
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+    <title>Productos</title>
+</head>
+<header></header>
+<div class="menu"></div>
+<body>
+
+<!-- <div class="wrapper">
+  <ul>
+    <li><a href="#">
+      <i class="fas fa-home icon"></i>
+      <p>Inicio</p>
+      </a></li>         
+    <li class="active"><a href="#">
+      <i class="fas fa-tshirt icon"></i>
+      <p>Categorias</p>
+      </a></li>
+    <li><a href="#">
+      <i class="fas fa-shopping-cart icon"></i>
+      <p>Carrito</p>
+      </a></li>
+    <li><a href="#">
+      <i class="far fa-credit-card icon"></i>
+      <p>Finalizar Compra</p>
+      </a></li>
+  </ul>
+</div> -->
+
+<!-- <div class="buscador">
+    <input type="search">
+    <button type="submit">Buscar</button>
+</div> -->
+
+<div class="buscador">
+    <input type="text" placeholder="Busque algo">
+</div>
+    <main>
+        <div class="filtro">
+            <div class="categorias">
+                <select name="categorias" id="categorias">
+                    <option value="" disabled selected>Elige una Categoria..</option>
+                    <option value="Esferos Publicitarios">Esferos Publicitarios</option>
+                    <option value="Esferos Temáticos">Esferos Temáticos</option>
+                    <option value="Esferos Ecológicos">Esferos Ecológicos</option>
+                    <option value="Esferos de Alta Gama">Esferos de Alta Gama</option>
+                    <option value="Resaltadores">Resaltadores</option>
+                    <option value="Estuches Kits">Estuches Kits</option>
+                    <option value="Lápices">Lápices</option>
+                    <option value="Bioseguridad">Bioseguridad</option>
+                    <option value="Bicicletas y Accesorios">Bicicletas y Accesorios</option>
+                    <option value="Agendas">Agendas</option>
+                    <option value="Alcancías">Alcancías</option>
+                    <option value="Bolsas">Bolsas</option>
+                    <option value="Botilitos">Botilitos</option>
+                    <option value="Botones">Botones</option>
+                    <option value="Cuidado Personal">Cuidado Personal</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Mugs">Mugs</option>
+                    <option value="Sombrillas">Sombrillas</option>
+                    <option value="Morrales">Morrales</option>
+                    <option value="Ecológicos">Ecológicos</option>
+                    <option value="Relojes">Relojes</option>
+                    <option value="Escolar">Escolar</option>
+                    <option value="Oficina">Oficina</option>
+                    <option value="Tecnología y Gadgets">Tecnología y Gadgets</option>
+                    <option value="Gorras y Camisetas">Gorras y Camisetas</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="Identificación">Identificación</option>
+                    <option value="Linternas y Lamparas">Linternas y Lamparas</option>
+                    <option value="Llaveros">Llaveros</option>
+                    <option value="Sublimación">Sublimación</option>
+                    <option value="Maquinas">Maquinas</option>
+                    <option value="Ofertas">Ofertas</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="USB">USB</option>
+                    <option value="Laser">Laser</option>
+                    <option value="Insumos">Insumos</option>
+                    <option value="Cocina - Hogar +">Cocina - Hogar +</option>
+                    <option value="Hogar - + Hogar">Hogar - + Hogar</option>
+                    <option value="Cuidado Personal - Hogar +">Cuidado Personal - Hogar +</option>
+                    <option value="Aseo - Hogar +">Aseo - Hogar +</option>
+                    <option value="Mascotas - Hogar +">Mascotas - Hogar +</option>
+                    <option value="Morrales - Hogar +">Morrales - Hogar +</option>
+                    <option value="Bicicletas - Hogar +">Bicicletas - Hogar +</option>
+                    <option value="Herramientas - Hogar +">Herramientas - Hogar +</option>
+                    <option value="Automóvil - Hogar +">Automóvil - Hogar +</option>
+                    <option value="Tecnología - Hogar +">Tecnología - Hogar +</option>
+                    <option value="Botilitos - Hogar +">Botilitos - Hogar +</option>
+                    <option value="Nacional">Nacional</option>
+                    <option value="Carros">Carros</option>
+                    <option value="Muñecas">Muñecas</option>
+                    <option value="Didácticos">Didácticos</option>
+                    <option value="Musicales">Musicales</option>
+                </select>
+            </div>
+
+        <div class="rango">
+            <!-- <label>Por defecto
+                <input oninput="console.log(this.value)" type="range">
+            </label> -->
+              <!-- <label>Con atributo Step = 20
+                
+              <input type="range" min="0" max="100" step="20">
+              </label> -->
+              
+              <!-- <label>
+              <input type="range" min="0" max="100" step="1" value="0">
+              </label> -->
+
+              <form onchange="output.value=parseInt(rangeField.value)" oninput="changeVar(rangeField.value,rangeField.min, rangeField.max)">
+                <label class="sliderBar">Rango de Precio
+                <input id="rangeField" type="range" list="mydata" min="0" max="100" value="0" step="10">
+                <output id="output" value="50">0</output>
+              </label>
+              </form>
+
+              <script>
+                  function changeVar(value, min, max){
+                  let range = max - min;
+                  let progressW = (value-min)/range*100 +'%';
+                  $('#rangeField').css('--progressW', progressW);
+                }
+              </script>
+
+              <!-- <label>Con atributo list y datalist
+                <input type="range" list="mydata" min="0" max=13 value=8 onchange="console.log(this.value)">
+                <datalist id="mydata">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                  <option value="5"></option>
+                  <option value="8"></option>
+                  <option value="13"></option>
+                </datalist>
+              </label> -->
+        </div>
+
+          <div class="colores">
+              <select name="colores" id="colores">
+                    <option value="" disabled selected>Elige un Color..</option>
+                    <option value="azul">Azul</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="verde">Verde</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Gris Oscuro">Gris Oscuro</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Gris">Gris</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Transparente">Transparente</option>
+                    <option value="Beige">Beige</option>
+                    <option value="Curuba">Curuba</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Dorado">Dorado</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="Bronce">Bronce</option>
+                    <option value="café">Café</option>
+                    <option value="Vinotinto">Vinotinto</option>
+                    <option value="Salmón">Salmón</option>
+                    <option value="Rosado">Rosado</option>
+                    <option value="fucsia">Fucsia</option>
+                    <option value="lila">Lila</option>
+                    <option value="morado">Morado</option>
+                    <option value="Azul Oscuro">Azul Oscuro</option>
+                    <option value="Azul Petroleo">Azul Petroleo</option>
+                    <option value="Azul Turquesa">Azul Turquesa</option>
+                    <option value="verde Turquesa">Verde Turquesa</option>
+                    <option value="Azul Claro">Azul Claro</option>
+                    <option value="verde claro">Verde Claro</option>
+                    <option value="verde oscuro">Verde Oscuro</option>
+                    <option value="madera">Madera</option>
+                    <option value="bambú">Bambú</option>
+                    <option value="fucsia claro">Fucsia Claro</option>
+                    <option value="Rosado fuerte">Rosado Fuerte</option>
+                    <option value="Terracota">Terracota</option>
+                    <option value="verde aguacate">Verde Aguacate</option>
+                    <option value="piel">Piel</option>
+                    <option value="Verde biche">Verde Biche</option>
+                    <option value="verde limon">Verde Limon</option>
+                    <option value="oro rosa">Oro Rosa</option>
+                    <option value="violeta claro">Violeta Claro</option>
+                    <option value="verde menta">Verde Menta</option>
+                    <option value="palo rosa">Palo Rosa</option>
+                    <option value="pastel">Pastel</option>
+                    <option value="cobre">Cobre</option>
+                    <option value="blanco - azul">Blanco - Azul</option>
+                    <option value="blanco - rojo">Blanco - Rojo</option>
+                    <option value="blanco - verde">Blanco - Verde</option>
+                    <option value="blanco - negro">Blanco - Negro</option>
+                    <option value="craft">Craft</option>
+              </select>
+          </div>
+
+        </div>
+            <div class="container-tarjeta">
+                <div class="tarjeta">
+                    <!-- <img class="producto-imagen" src="/assets/1-cel.jpg" alt="Producto"> -->
+                    <div class="card">
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <!-- <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-1.jpeg" alt="Tokiotodo-1"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-2.jpeg" alt="Tokiotodo-2"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-3.jpeg" alt="Tokiotodo-3"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-4.jpeg" alt="Tokiotodo-4"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-5.jpeg" alt="Tokiotodo-5"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiotodo/Tokiotodo-6.jpeg" alt="Tokiotodo-6"></div> -->
+
+                            <div class="swiper-slide"><img src="/assets/Tokioazul/Tokioazul-1.jpeg" alt="Tokioazul-1"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokioazul/Tokioazul-2.jpeg" alt="Tokioazul-2"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiorojo/Tokiorojo-1.jpeg" alt="Tokiorojo-1"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokiorojo/Tokiorojo-2.jpeg" alt="Tokiorojo-2"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokioverde/Tokioverde-1.jpeg" alt="Tokioverde-1"></div>
+                            <div class="swiper-slide"><img src="/assets/Tokioverde/Tokioverde-2.jpeg" alt="Tokioverde-2"></div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div> -->
+                        <!-- <div class="swiper-button-prev"></div> -->
+                        <!-- <div class="swiper-pagination-bullet"></div> -->
+                        </div>
+                        <div class="color-buttons">
+                            <!-- <button id="btn-todo" class="color-button"  data-color="Tokiotodo"></button> -->
+                            <button id="btn-azul" class="color-button" data-color="Tokioazul"></button>
+                            <button id="btn-rojo" class="color-button" data-color="Tokiorojo"></button>
+                            <button id="btn-verde" class="color-button" data-color="Tokioverde"></button>
+                          </div>
+                        
+                        <div class="card-info">
+                          <h2 class="producto-nombre">Producto #1</h2>
+                    <p class="description">Este es un producto de Boton Promo que se usara como ejemplo para que se pueda usar en dos lineas y no en una sola, tal vez poniendo un limite de palabras</p>
+                <div class="comprar">
+                    <span class="presio"><span>$</span>2.699.000</span>
+                    <div class="btn-comprar">
+                        <button class="producto-boton">Agregar al carrito</button>
+                        <button class="producto-boton">Comprar</button>
+                    </div>
+                </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+    </main>
+    <script src="/js/tarjeta.js"></script>
+    <script src="/js/botones.js"></script>
+    <script src="/js/borde-activo.js"></script>
+    <script src="/js/cardProducto.js"></script>
+    <script src="/js/card.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/sc.js"></script>
+    <script src="/js/filtro.js"></script>
+</body>
+</html>
+
+<!-- <div>
+                <div>
+                    <img src="" alt="">
+                    <button></button>
+                    <button></button>
+                </div>
+                <div>
+                    <h2>
+                        Producto 1
+                    </h2>
+                    <p>Precio</p>
+                    <img src="" alt="">
+                </div>
+            </div> -->

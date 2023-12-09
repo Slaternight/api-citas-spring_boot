@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/breadcrum.css">
+    <link rel="stylesheet" href="/css/productos.css">
+    <script type="module">
+        import productos from '/js/productos.js';
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>    
+    <title>Productos-Esferos</title>
+</head>
+<header></header>
+<div class="menu"></div>
+<body>
+<!-- <div class="wrapper">
+  <ul>
+    <li><a href="#">
+      <i class="fas fa-home icon"></i>
+      <p>Inicio</p>
+      </a></li>
+    <li class="active"><a href="#">
+      <i class="fas fa-tshirt icon"></i>
+      <p>Categorias</p>
+      </a></li>
+    <li><a href="#">
+      <i class="fas fa-shopping-cart icon"></i>
+      <p>Carrito</p>
+      </a></li>
+    <li><a href="#">
+      <i class="far fa-credit-card icon"></i>
+      <p>Finalizar Compra</p>
+      </a></li>
+  </ul>
+</div> -->
+
+<div class="buscador">
+    <input type="search">
+    <button type="submit">Buscar</button>
+</div>
+    <main>
+        <div class="filtro">
+            <div class="categorias">
+                <select name="categorias" id="categorias">
+                    <option value="" disabled selected>Elige una Categoria..</option>
+                    <option value="Esferos Publicitarios">Esferos Publicitarios</option>
+                    <option value="Esferos Temáticos">Esferos Temáticos</option>
+                    <option value="Esferos Ecológicos">Esferos Ecológicos</option>
+                    <option value="Esferos de Alta Gama">Esferos de Alta Gama</option>
+                    <option value="Resaltadores">Resaltadores</option>
+                    <option value="Estuches Kits">Estuches Kits</option>
+                    <option value="Lápices">Lápices</option>
+                </select>
+            </div>
+
+            <div class="colores">
+                <select name="colores" id="colores">
+                    <option value="" disabled selected>Elige un Color..</option>
+                    <option value="azul">Azul</option>
+                    <option value="rojo">Rojo</option>
+                    <option value="verde">Verde</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Gris Oscuro">Gris Oscuro</option>
+                    <option value="Plata">Plata</option>
+                    <option value="Gris">Gris</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Transparente">Transparente</option>
+                    <option value="Beige">Beige</option>
+                    <option value="Curuba">Curuba</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Dorado">Dorado</option>
+                    <option value="naranja">Naranja</option>
+                    <option value="Bronce">Bronce</option>
+                    <option value="café">Café</option>
+                    <option value="Vinotinto">Vinotinto</option>
+                    <option value="Salmón">Salmón</option>
+                    <option value="Rosado">Rosado</option>
+                    <option value="fucsia">Fucsia</option>
+                    <option value="lila">Lila</option>
+                    <option value="morado">Morado</option>
+                    <option value="Azul Oscuro">Azul Oscuro</option>
+                    <option value="Azul Petroleo">Azul Petroleo</option>
+                    <option value="Azul Turquesa">Azul Turquesa</option>
+                    <option value="verde Turquesa">Verde Turquesa</option>
+                    <option value="Azul Claro">Azul Claro</option>
+                    <option value="verde claro">Verde Claro</option>
+                    <option value="verde oscuro">Verde Oscuro</option>
+                    <option value="madera">Madera</option>
+                    <option value="bambú">Bambú</option>
+                    <option value="fucsia claro">Fucsia Claro</option>
+                    <option value="Rosado fuerte">Rosado Fuerte</option>
+                    <option value="Terracota">Terracota</option>
+                    <option value="verde aguacate">Verde Aguacate</option>
+                    <option value="piel">Piel</option>
+                    <option value="Verde biche">Verde Biche</option>
+                    <option value="verde limon">Verde Limon</option>
+                    <option value="oro rosa">Oro Rosa</option>
+                    <option value="violeta claro">Violeta Claro</option>
+                    <option value="verde menta">Verde Menta</option>
+                    <option value="palo rosa">Palo Rosa</option>
+                    <option value="pastel">Pastel</option>
+                    <option value="cobre">Cobre</option>
+                    <option value="blanco - azul">Blanco - Azul</option>
+                    <option value="blanco - rojo">Blanco - Rojo</option>
+                    <option value="blanco - verde">Blanco - Verde</option>
+                    <option value="blanco - negro">Blanco - Negro</option>
+                    <option value="craft">Craft</option>
+                </select>
+            </div>
+
+        </div>
+        </body>
+    </main>
+    <script src="/js/cardProducto.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/sc.js"></script>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script> 
+    <script src="/js/filtro.js"></script>
+</body>
+</html>

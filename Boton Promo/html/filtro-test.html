@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/filtro-test.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+    <title>filtro-test</title>
+</head>
+<body>
+  <div class="container-filtro">
+    <div class="filter-template">
+      <div class="categoria-padre">
+        <select id="category-filter">
+        <option value="" disabled selected>Elige una Categoria..</option>
+          <option value="esferos">Esferos</option>
+          <option value="promocionales">Promocionales</option>
+          <option value="hogarplus">HogarPlus+</option>
+          <option value="juguetes">Juguetes</option>
+        </select>
+      </div>
+      
+        <div class="filter-subcategory esferos">
+          <select id="esferos-filter">
+            <option value="" disabled selected>Elige una Opcion...</option>
+                    <option value="Esferos Publicitarios">Esferos Publicitarios</option>
+                    <option value="Esferos Temáticos">Esferos Temáticos</option>
+                    <option value="Esferos Ecológicos">Esferos Ecológicos</option>
+                    <option value="Esferos de Alta Gama">Esferos de Alta Gama</option>
+                    <option value="Resaltadores">Resaltadores</option>
+                    <option value="Estuches Kits">Estuches Kits</option>
+                    <option value="Lápices">Lápices</option>
+          </select>
+        </div>
+      
+        <div class="filter-subcategory promocionales">
+          <select id="promocionales-filter">
+            <option value="" disabled selected>Elige una Opcion...</option>
+            <option value="Bioseguridad">Bioseguridad</option>
+                    <option value="Bicicletas y Accesorios">Bicicletas y Accesorios</option>
+                    <option value="Agendas">Agendas</option>
+                    <option value="Alcancías">Alcancías</option>
+                    <option value="Bolsas">Bolsas</option>
+                    <option value="Botilitos">Botilitos</option>
+                    <option value="Botones">Botones</option>
+                    <option value="Cuidado Personal">Cuidado Personal</option>
+                    <option value="Hogar">Hogar</option>
+                    <option value="Mugs">Mugs</option>
+                    <option value="Sombrillas">Sombrillas</option>
+                    <option value="Morrales">Morrales</option>
+                    <option value="Ecológicos">Ecológicos</option>
+                    <option value="Relojes">Relojes</option>
+                    <option value="Escolar">Escolar</option>
+                    <option value="Oficina">Oficina</option>
+                    <option value="Tecnología y Gadgets">Tecnología y Gadgets</option>
+                    <option value="Gorras y Camisetas">Gorras y Camisetas</option>
+                    <option value="Herramientas">Herramientas</option>
+                    <option value="Identificación">Identificación</option>
+                    <option value="Linternas y Lamparas">Linternas y Lamparas</option>
+                    <option value="Llaveros">Llaveros</option>
+                    <option value="Sublimación">Sublimación</option>
+                    <option value="Maquinas">Maquinas</option>
+                    <option value="Ofertas">Ofertas</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="USB">USB</option>
+                    <option value="Laser">Laser</option>
+                    <option value="Insumos">Insumos</option>
+          </select>
+        </div>
+
+        <div class="filter-subcategory hogarplus">
+            <select id="hogar-filter">
+                <option value="" disabled selected>Elige una Opcion...</option>
+                <option value="Cocina - Hogar +">Cocina - Hogar +</option>
+                <option value="Hogar - + Hogar">Hogar - + Hogar</option>
+                <option value="Cuidado Personal - Hogar +">Cuidado Personal - Hogar +</option>
+                <option value="Aseo - Hogar +">Aseo - Hogar +</option>
+                <option value="Mascotas - Hogar +">Mascotas - Hogar +</option>
+                <option value="Morrales - Hogar +">Morrales - Hogar +</option>
+                <option value="Bicicletas - Hogar +">Bicicletas - Hogar +</option>
+                <option value="Herramientas - Hogar +">Herramientas - Hogar +</option>
+                <option value="Automóvil - Hogar +">Automóvil - Hogar +</option>
+                <option value="Tecnología - Hogar +">Tecnología - Hogar +</option>
+                <option value="Botilitos - Hogar +">Botilitos - Hogar +</option>
+            </select>
+          </div>
+
+          <div class="filter-subcategory juguetes"> 
+            <select id="juguetes-filter">
+                <option value="" disabled selected>Elige una Opcion...</option>
+                <option value="Nacional">Nacional</option>
+                <option value="Carros">Carros</option>
+                <option value="Muñecas">Muñecas</option>
+                <option value="Didácticos">Didácticos</option>
+                <option value="Musicales">Musicales</option>
+            </select>
+          </div>
+      </div>
+
+      <div class="colores">
+        <select name="colores" id="colores">
+            <option value="" disabled selected>Elige un Color..</option>
+            <option value="azul">Azul</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            <option value="Negro">Negro</option>
+            <option value="Gris Oscuro">Gris Oscuro</option>
+            <option value="Plata">Plata</option>
+            <option value="Gris">Gris</option>
+            <option value="Blanco">Blanco</option>
+            <option value="Transparente">Transparente</option>
+            <option value="Beige">Beige</option>
+            <option value="Curuba">Curuba</option>
+            <option value="Amarillo">Amarillo</option>
+            <option value="Dorado">Dorado</option>
+            <option value="naranja">Naranja</option>
+            <option value="Bronce">Bronce</option>
+            <option value="café">Café</option>
+            <option value="Vinotinto">Vinotinto</option>
+            <option value="Salmón">Salmón</option>
+            <option value="Rosado">Rosado</option>
+            <option value="fucsia">Fucsia</option>
+            <option value="lila">Lila</option>
+            <option value="morado">Morado</option>
+            <option value="Azul Oscuro">Azul Oscuro</option>
+            <option value="Azul Petroleo">Azul Petroleo</option>
+            <option value="Azul Turquesa">Azul Turquesa</option>
+            <option value="verde Turquesa">Verde Turquesa</option>
+            <option value="Azul Claro">Azul Claro</option>
+            <option value="verde claro">Verde Claro</option>
+            <option value="verde oscuro">Verde Oscuro</option>
+            <option value="madera">Madera</option>
+            <option value="bambú">Bambú</option>
+            <option value="fucsia claro">Fucsia Claro</option>
+            <option value="Rosado fuerte">Rosado Fuerte</option>
+            <option value="Terracota">Terracota</option>
+            <option value="verde aguacate">Verde Aguacate</option>
+            <option value="piel">Piel</option>
+            <option value="Verde biche">Verde Biche</option>
+            <option value="verde limon">Verde Limon</option>
+            <option value="oro rosa">Oro Rosa</option>
+            <option value="violeta claro">Violeta Claro</option>
+            <option value="verde menta">Verde Menta</option>
+            <option value="palo rosa">Palo Rosa</option>
+            <option value="pastel">Pastel</option>
+            <option value="cobre">Cobre</option>
+            <option value="blanco - azul">Blanco - Azul</option>
+            <option value="blanco - rojo">Blanco - Rojo</option>
+            <option value="blanco - verde">Blanco - Verde</option>
+            <option value="blanco - negro">Blanco - Negro</option>
+            <option value="craft">Craft</option>
+        </select>
+    </div>
+    <div class="btn-filtrar">
+      <button>Filtrar</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+  <script src="/js/filtro-test.js"></script>
+  <script src="/js/select-test.js"></script>
+</body>
+</html>

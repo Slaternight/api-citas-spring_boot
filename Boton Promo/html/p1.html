@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/perfil.css">
+    <script src="/js/sc.js"></script>
+</head>
+<div class="profile-details">
+    <div class="profile-field">
+        <h2>Mi perfil</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" value="${nombre-registrado}$">
+        
+        <label for="lastname">Apellido:</label>
+        <input type="text" id="lastname" value="${apellido-registrado}$">
+
+        <label for="company">Empresa:</label>
+        <div class="empresa">
+        <input type="text" id="company" value="${empresa-registrada}$">
+        <b><i>(opcional)</i></b>
+        </div>
+
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" value="${email-registrado}$">
+
+        <label for="contrasenia">Contrasenia:</label>
+        <input type="text" id="contrasenia" value="${contrasenia-registrada}$">
+        </div>
+    
+    <div class="profile-field">
+        <h2>Tu identificación</h2>
+        <label for="document">Tipo de Documento:</label>
+        <select name="document" id="document" aria-placeholder="Tipo de Documento">
+            <option value=""></option>
+            <option value="cc">Cedula de Ciudadanía</option>
+            <option value="ti">Tarjeta de Identidad</option>
+            <option value="ce">Cedula Extrangeria</option>
+        </select>
+        <label for="edad">Numero de Documento:</label>
+        <input type="number" id="edad" value="">
+    </div>
+
+    <div class="profile-field">
+        <h2>Tu Dirección</h2>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" value="${direccion-registrada}$">
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" value="${ciudad-registrada}$">
+
+        <label for="telefono">Telefono:</label>
+        <div class="telefono">
+        <input type="number" id="telefono" value="${telefono-registrado}$">
+        <b><i>(opcional)</i></b>
+        </div>
+
+        <label for="celular">Celular:</label>
+        <input type="number" id="celular" value="${valor-celular}$">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" value="" placeholder="Ingrese su email">
+    </div>
+
+    <div class="warning">
+        <h2>¡Tener en cuenta!</h2>
+        <h3>Recuerda que estos mismos datos se usarán para tu facturación</h3>
+    </div>
+
+</div>
+</html>

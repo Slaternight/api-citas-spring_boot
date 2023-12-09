@@ -1,0 +1,73 @@
+.container-nav-2{
+    display: flex;
+    max-width: 100%;
+    background-color: #005CA5;
+    padding: 20px;
+    overflow: hidden;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.nav-main-2{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-main-2 img{
+    width: 150px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.logo img{
+    text-align: left;
+}
+
+.li{
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    justify-content: end;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.li li{
+    text-align: end;
+}
+
+.li li{
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-decoration: underline;
+    text-decoration-thickness: 2.9px;
+}
+
+.li li:hover{
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #ED2E34;
+    transition: .3s;
+    text-decoration: underline;
+}
+
+li{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilo para anular el resaltado azul del enlace al hacer clic */
+a {
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}

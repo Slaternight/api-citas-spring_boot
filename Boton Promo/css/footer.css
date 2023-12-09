@@ -1,0 +1,254 @@
+.footer{
+    width: 100%;
+}
+
+.footer{
+    background-image: url('/assets/cara-op@2x.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+footer{
+    background-color: #101820;
+}
+
+.footer p, .footer h2, .footer h3{
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.container-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    margin: 0 5%;
+}
+
+.container-footer h2{
+    text-align: center;
+}
+
+.nosotros{
+    grid-column: 1 / 2;
+    grid-row: 1;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.barra{
+    background-color: #ED2E34;
+    border-radius: 10px;
+    padding: 0px 110px;
+    width: 100%;
+    display: inline;
+}
+
+.nosotros h2{
+    margin: 0;
+}
+
+.nosotros img{
+    width: 300px;
+    max-width: 100%;
+    /* opacity: 0.8; */
+}
+
+/* .nosotros img:hover{
+    opacity: 1;
+    cursor: pointer;
+} */
+
+.nosotros a{
+    display: inline-block;
+    margin: 5px 0; 
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.redes-sociales a img{
+    width: 30px;
+    /* opacity: 0.8; */
+}
+
+/* .redes-sociales a img:hover{
+    opacity: 1;
+} */
+
+.info{
+    grid-column: 2 / 3;
+    grid-row: 1;
+    max-width: 100%;
+    text-align: center;
+    /* border: 1px solid #ffffff; */
+}
+
+.info h2{
+    margin: 0;
+}
+
+.resto{
+    width: 62%;
+    display: inline-block;
+    text-align: left;
+}
+
+.contact .resto{
+    width: 56%;
+    display: inline-block;
+    text-align: left;
+}
+
+.adress .resto{
+    width: 58%;
+    display: inline-block;
+    text-align: left;
+}
+
+.contact{
+    grid-column: 3 / 4;
+    grid-row: 1;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact h2{
+    margin: 0;
+}
+
+select{
+    padding: 10px;
+    background-color: white;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.adress{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #ffffff; */
+}
+
+.adress h2{
+    margin: 0;
+}
+
+.mapa{
+    width: 100%;
+    height: 100%;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+
+.mapa iframe{
+    width: 85%;
+    height: 80%;
+    border-radius: 15px;
+    opacity: .9;
+    transition: 100ms;
+}
+
+.mapa iframe:hover{
+    opacity: 1;
+    transition: 100ms;
+}
+
+.titulo-footer{
+    padding-bottom: 3%;
+}
+
+.fones{
+    display: flex;
+}
+
+.fones select{
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:initial;
+}
+
+span{
+    width: 150px;
+}
+
+.wasap, .numbers, .email{
+    display: flex;
+    align-items: center;
+}
+
+.wasap img, .numbers img, .email img{
+    width: 10%;
+    padding-right: 10px;
+    padding-bottom: 9px;
+}
+
+span{
+    background-color: #ffffff;
+}
+
+.copy{
+    display: flex;
+    grid-column: 1 / 4;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    max-width: 100%;
+}
+
+.copy span{
+    display: flex;
+    color: #ED2E34;
+    width: auto;
+    margin: 0px 2px;
+    background-color: transparent;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;   
+}
+button{
+    font-family: 'Manrope', sans-serif;
+}
+
+label{
+    font-family: 'Manrope', sans-serif;
+}
+
+input{
+    font-family: 'Manrope', sans-serif;
+}

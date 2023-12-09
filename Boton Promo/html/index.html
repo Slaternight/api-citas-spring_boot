@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boton Promo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/fondo.css">
+    <link rel="stylesheet" href="/css/catalogos.css">
+    <link rel="stylesheet" href="/css/laptop.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/sc.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <link rel="stylesheet" href="/css/medios.css">
+    <link rel="stylesheet" href="/css/sliderf.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header></header>
+    <div class="container-nav-2">
+        <nav class="nav-main-2">
+            <div class="logo">
+            <img src="/assets/LOGO@2x.png" alt="logo">
+        </div>
+        <div class="li">
+            <li  class="activo"><a href="/html/index.html">Inicio</a></li>
+            <li><a href="#">Explorar</a></li>
+            <li onclick="redirectSmooth('#categorias')"><a href="#categorias">Categorias</a></li>
+            <li><a href="#catalogos">Catalogos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </div>
+            <div class="sc"></div>
+        </nav>
+    </div>
+    <main>
+
+        <!-- <canvas id="canvas"></canvas> -->
+
+            <div class="search-bar">
+                <input type="text" placeholder="Busque algo">
+            </div>
+
+            <div class="banner">
+                <div class="img">
+                    <img src="/assets/banner prueba5.png" alt="">
+                    <img src="/assets/banner prueba6.png" alt="">
+                </div>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="/assets/Elementos redes Sociales(1).jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/assets/horarios-finde.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="/assets/Banner catalogo-01.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">
+            &#10094;
+        </a>
+
+        <a class="next" onclick="plusSlides(1)">
+            &#10095;
+        </a>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+
+                <div class="img">
+                    <img src="/assets/banner prueba7.png" alt="">
+                    <img src="/assets/banner prueba8.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="float-botton-rrss">
+                <a href="https://www.instagram.com/botonpromo/" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1521 27.0707C6.85881 27.0707 0.922363 21.1343 0.922363 13.841C0.922363 6.5437 6.85881 0.611328 14.1521 0.611328C21.4453 0.611328 27.3817 6.54778 27.3817 13.841C27.3817 21.1343 21.4453 27.0707 14.1521 27.0707ZM14.1521 1.53622C7.36812 1.53622 1.84726 7.05709 1.84726 13.8451C1.84726 20.629 7.36812 26.1499 14.1521 26.1499C20.936 26.1499 26.4568 20.629 26.4568 13.8451C26.4568 7.05301 20.936 1.53622 14.1521 1.53622Z" fill="currentcolor"></path>
+                    <path d="M9.9057 8.00035L9.90479 8.00071C9.54222 8.14116 9.24554 8.32252 8.94186 8.6262C8.63818 8.92988 8.45682 9.22656 8.31637 9.58912L8.31602 9.59004C8.17746 9.94634 8.07376 10.3659 8.04441 11.0259L9.9057 8.00035ZM9.9057 8.00035C10.2621 7.86177 10.6817 7.75805 11.3417 7.72872C12.0586 7.69685 12.282 7.68872 14.1524 7.68872C16.0228 7.68872 16.2462 7.69685 16.9631 7.72872C17.6231 7.75805 18.0428 7.86177 18.3991 8.00036L18.4 8.00071C18.7626 8.14116 19.0593 8.32252 19.363 8.6262C19.6666 8.92988 19.848 9.22656 19.9884 9.58912L19.9888 9.59004C20.1274 9.94637 20.2311 10.366 20.2604 11.0261C20.2923 11.743 20.3004 11.9664 20.3004 13.8367C20.3004 15.707 20.2923 15.9264 20.2604 16.6476C20.2311 17.3075 20.1274 17.7272 19.9888 18.0835L19.9884 18.0844C19.848 18.4469 19.6666 18.7436 19.363 19.0473C19.0593 19.351 18.7626 19.5323 18.4 19.6728L18.3991 19.6731C18.0428 19.8117 17.6232 19.9154 16.9631 19.9448C16.2462 19.9766 16.0228 19.9847 14.1524 19.9847C12.2821 19.9847 12.0627 19.9766 11.3416 19.9447C10.6816 19.9154 10.262 19.8117 9.9057 19.6731L9.90478 19.6728C9.54222 19.5323 9.24554 19.351 8.94186 19.0473C8.63818 18.7436 8.45682 18.4469 8.31637 18.0844L8.31602 18.0835M9.9057 8.00035L8.31602 18.0835M8.31602 18.0835C8.17744 17.7271 8.07374 17.3075 8.0444 16.6474C8.01254 15.9305 8.00439 15.7071 8.00439 13.8367C8.00439 11.9666 8.01254 11.7471 8.0444 11.0261L8.31602 18.0835Z" stroke="currentcolor"></path>
+                    <path d="M14.1522 10.2947C12.1965 10.2947 10.6074 11.8796 10.6074 13.8394C10.6074 15.7992 12.1924 17.3842 14.1522 17.3842C16.112 17.3842 17.6969 15.7992 17.6969 13.8394C17.6969 11.8796 16.1079 10.2947 14.1522 10.2947ZM14.1522 16.1415C12.881 16.1415 11.8501 15.1107 11.8501 13.8394C11.8501 12.5682 12.881 11.5374 14.1522 11.5374C15.4234 11.5374 16.4542 12.5682 16.4542 13.8394C16.4542 15.1107 15.4234 16.1415 14.1522 16.1415Z" fill="currentcolor"></path>
+                    <path d="M17.8359 10.9831C18.2927 10.9831 18.663 10.6128 18.663 10.156C18.663 9.69918 18.2927 9.32886 17.8359 9.32886C17.3791 9.32886 17.0088 9.69918 17.0088 10.156C17.0088 10.6128 17.3791 10.9831 17.8359 10.9831Z" fill="currentcolor"></path>
+                    </svg></div></a>
+                <a href="https://www.linkedin.com/company/boton-promo/" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1521 27.1803C6.85883 27.1803 0.922363 21.2439 0.922363 13.9506C0.922363 6.65332 6.85883 0.720947 14.1521 0.720947C21.4453 0.720947 27.3817 6.6574 27.3817 13.9506C27.3817 21.2439 21.4494 27.1803 14.1521 27.1803ZM14.1521 1.64584C7.36813 1.64584 1.84727 7.16671 1.84727 13.9547C1.84727 20.7386 7.36813 26.2595 14.1521 26.2595C20.936 26.2595 26.4568 20.7386 26.4568 13.9547C26.4609 7.16263 20.9401 1.64584 14.1521 1.64584Z" fill="currentcolor"></path>
+                    <path d="M19.3142 7.20654L8.98957 7.20654C8.11764 7.20654 7.40869 7.9155 7.40869 8.78743L7.40869 19.112C7.40869 19.984 8.11764 20.6929 8.98957 20.6929H19.3142C20.1861 20.6929 20.8951 19.984 20.8951 19.112V8.78743C20.8951 7.9155 20.1861 7.20654 19.3142 7.20654ZM11.6257 18.346H9.78409L9.78409 12.3933H11.6257L11.6257 18.346ZM10.7294 11.5784C10.1304 11.5784 9.64963 11.0936 9.64963 10.4987C9.64963 9.90383 10.1304 9.41896 10.7294 9.41896C11.3242 9.41896 11.8091 9.90383 11.8091 10.4987C11.8091 11.0976 11.3242 11.5784 10.7294 11.5784ZM18.5238 18.346H16.7066V15.441C16.7066 14.7524 16.674 13.8682 15.7287 13.8682C14.7712 13.8682 14.5716 14.6179 14.5716 15.3921L14.5716 18.346H12.7788L12.7788 12.3933H14.5716V13.2041C14.816 12.7396 15.419 12.2874 16.3154 12.2874C18.1815 12.2874 18.5197 13.473 18.5197 15.0702V18.346H18.5238Z" fill="currentcolor"></path>
+                    </svg></div></a>
+                <a href="https://www.facebook.com/BotonPromo/" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.152 26.6254C6.85881 26.6254 0.922363 20.6889 0.922363 13.3957C0.922363 6.09839 6.85881 0.166016 14.152 0.166016C21.4453 0.166016 27.3817 6.10247 27.3817 13.3957C27.3817 20.6889 21.4494 26.6254 14.152 26.6254ZM14.152 1.09091C7.36811 1.09091 1.84726 6.61177 1.84726 13.3998C1.84726 20.1837 7.36811 25.7046 14.152 25.7046C20.936 25.7046 26.4568 20.1837 26.4568 13.3998C26.4609 6.6077 20.9401 1.09091 14.152 1.09091Z" fill="currentcolor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.4604 13.4055H15.2968L15.2968 21.1225H12.0902V13.4055H10.5664L10.5664 10.6797H12.0902V8.91545C12.0902 7.65238 12.6892 5.67627 15.3294 5.67627L17.7089 5.68443V8.33281L15.9813 8.33281C15.7002 8.33281 15.3009 8.47134 15.3009 9.07436V10.6756H17.7456L17.4604 13.4055Z" fill="currentcolor"></path>
+                    </svg></div></a>
+
+                    <!-- <a href="https://www.tiktok.com/@boton.promo" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="27" viewBox="0 0 28 27" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.1521 26.5158C6.85881 26.5158 0.922363 20.5793 0.922363 13.2861C0.922363 5.98877 6.85881 0.0563965 14.1521 0.0563965C21.4453 0.0563965 27.3817 5.99285 27.3817 13.2861C27.3817 20.5793 21.4453 26.5158 14.1521 26.5158ZM14.1521 0.981289C7.36812 0.981289 1.84726 6.50216 1.84726 13.2902C1.84726 20.0741 7.36812 25.595 14.1521 25.595C20.936 25.595 26.4568 20.0741 26.4568 13.2902C26.4568 6.49808 20.936 0.981289 14.1521 0.981289Z" fill="currentcolor"></path>
+                        <path d="M6.93213 18.5123C8.61894 18.6508 10.1428 18.2311 11.4873 17.1962C10.8314 17.1514 10.2365 16.9518 9.7109 16.5566C9.18529 16.1613 8.81861 15.652 8.60674 15.0246C8.84306 15.0327 9.06714 15.0572 9.28716 15.049C9.50718 15.0409 9.7272 15.0042 9.9513 14.9634C8.41931 14.4867 7.59221 13.4681 7.48627 11.8506C7.73074 11.9443 7.94668 12.0421 8.17077 12.1032C8.39487 12.1643 8.62711 12.1888 8.85935 12.2173C7.48627 11.0561 7.1766 9.67077 7.92629 8.02062C9.64163 10.0334 11.7848 11.1335 14.4047 11.3127C14.3843 11.0887 14.3558 10.889 14.3476 10.6853C14.3191 9.9356 14.5309 9.25924 14.9995 8.67252C15.7899 7.68651 16.8289 7.31167 18.0676 7.51132C18.5606 7.59281 19.0088 7.8006 19.3999 8.11841C19.4773 8.17952 19.5629 8.2325 19.6199 8.30584C19.7136 8.424 19.8114 8.43622 19.95 8.40362C20.5041 8.26509 21.0419 8.07767 21.5431 7.79653C21.6001 7.76394 21.6571 7.73949 21.7386 7.69467C21.6327 8.0736 21.4493 8.38323 21.2253 8.66437C21.0052 8.9455 20.7363 9.18183 20.4389 9.38555C21.0297 9.34073 21.5838 9.16962 22.1461 8.96589C22.0116 9.14109 21.8812 9.32036 21.7427 9.48741C21.429 9.85818 21.0786 10.1882 20.6915 10.4857C20.6467 10.5182 20.6141 10.5997 20.6141 10.6608C20.6426 11.5654 20.5285 12.4495 20.2881 13.3215C20.117 13.9449 19.8766 14.5479 19.5792 15.1264C19.2858 15.6887 18.9476 16.2184 18.5443 16.7073C18.0594 17.2981 17.5134 17.8237 16.89 18.2719C16.3318 18.6712 15.7329 19.0012 15.0973 19.2579C14.4658 19.5105 13.8138 19.6776 13.1456 19.7835C12.4489 19.8935 11.7481 19.9098 11.0473 19.865C10.2854 19.8161 9.53569 19.6776 8.81859 19.4087C8.34189 19.2294 7.88148 19.0134 7.42107 18.8016C7.25401 18.7201 7.09511 18.6101 6.93213 18.5123Z" fill="currentcolor"></path>
+                        </svg></div></a> -->
+
+                        <a href="https://www.tiktok.com/@boton.promo" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.152 27.2897C6.85881 27.2897 0.922363 21.3532 0.922363 14.06C0.922363 6.7627 6.85881 0.830322 14.152 0.830322C21.4453 0.830322 27.3817 6.76677 27.3817 14.06C27.3817 21.3532 21.4494 27.2897 14.152 27.2897ZM14.152 1.75521C7.36811 1.75521 1.84726 7.27608 1.84726 14.0641C1.84726 20.848 7.36811 26.3689 14.152 26.3689C20.936 26.3689 26.4568 20.848 26.4568 14.0641C26.4609 7.27201 20.9401 1.75521 14.152 1.75521Z" fill="currentcolor"></path>
+                            <path d="M13.0023 12.4064C12.7543 12.4064 12.4235 12.3237 12.1755 12.4064C11.9274 12.4064 11.6794 12.4064 11.4313 12.4891C8.78537 12.9852 7.13166 15.5484 7.62777 18.029C8.20657 20.6749 10.8525 22.246 13.4158 21.5845C15.5656 21.0057 16.9712 19.1866 16.9712 16.9541V11.4969C18.1288 12.3237 19.3691 12.8198 20.7748 12.8198V10.4219C18.4596 10.1739 17.2193 8.9336 16.8885 6.61841L14.4907 6.61841L14.4907 17.2848C14.408 18.4424 13.4158 19.2693 12.3408 19.2693C11.1832 19.2693 10.191 18.4424 10.1083 17.2848C9.94297 16.2099 10.6871 15.135 11.762 14.887C12.1755 14.8043 12.5889 14.887 13.0023 14.887C13.0023 14.0601 13.0023 13.2332 13.0023 12.4064Z" fill="currentcolor"></path>
+                            </svg></div></a>
+
+                <a href="https://www.youtube.com/@catalogoespacial3286" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.152 26.735C6.8588 26.735 0.922363 20.7986 0.922363 13.5053C0.922363 6.20801 6.8588 0.275635 14.152 0.275635C21.4453 0.275635 27.3817 6.21209 27.3817 13.5053C27.3817 20.7986 21.4453 26.735 14.152 26.735ZM14.152 1.20053C7.36811 1.20053 1.84727 6.72139 1.84727 13.5094C1.84727 20.2933 7.36811 25.8142 14.152 25.8142C20.936 25.8142 26.4568 20.2933 26.4568 13.5094C26.4568 6.71732 20.936 1.20053 14.152 1.20053Z" fill="currentcolor"></path>
+                    <path d="M22.2318 8.92864C21.751 8.07708 21.2336 7.91818 20.1742 7.86114C19.1149 7.7878 16.4583 7.75928 14.1522 7.75928C11.8461 7.75928 9.18549 7.7878 8.12614 7.86114C7.07086 7.92225 6.54933 8.07708 6.06448 8.92864C5.57147 9.78019 5.31885 11.247 5.31885 13.8261V13.8302V13.8342V13.8383C5.31885 16.4093 5.57147 17.8842 6.06448 18.7276C6.54933 19.5792 7.06679 19.734 8.12614 19.8074C9.18142 19.8685 11.842 19.9052 14.1522 19.9052C16.4543 19.9052 19.1149 19.8685 20.1742 19.8074C21.2336 19.734 21.751 19.5792 22.2318 18.7276C22.7289 17.8842 22.9815 16.4093 22.9815 13.8383V13.8342V13.8302C22.9815 11.2429 22.733 9.78019 22.2318 8.92864ZM17.0166 14.2417L12.5102 16.943C12.1884 17.1345 11.785 16.9064 11.785 16.5315L11.785 11.1247C11.785 10.7499 12.1924 10.5217 12.5102 10.7132L17.0166 13.4146C17.3262 13.602 17.3262 14.0543 17.0166 14.2417Z" fill="currentcolor"></path>
+                    </svg></div></a>
+
+                         <!-- <a href="https://www.instagram.com/botonpromo/" target="_blank" class="link-float-botton-rrss w-inline-block"><div class="icon-rrss-botton-float w-embed"><svg width="28px" height="28px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title>Tiktok</title>
+                  
+                            <g id="Group-7" transform="translate(8.000000, 6.000000)">
+
+
+                                <path d="M14.1521 26.5158C6.85881 26.5158 0.922363 20.5793 0.922363 13.2861C0.922363 5.98877 6.85881 0.0563965 14.1521 0.0563965C21.4453 0.0563965 27.3817 5.99285 27.3817 13.2861C27.3817 20.5793 21.4453 26.5158 14.1521 26.5158ZM14.1521 0.981289C7.36812 0.981289 1.84726 6.50216 1.84726 13.2902C1.84726 20.0741 7.36812 25.595 14.1521 25.595C20.936 25.595 26.4568 20.0741 26.4568 13.2902C26.4568 6.49808 20.936 0.981289 14.1521 0.981289Z" fill="currentcolor"></path>
+                                <path d="M29.5248245,9.44576327 C28.0821306,9.0460898 26.7616408,8.29376327 25.6826204,7.25637551 C25.5109469,7.09719184 25.3493143,6.92821224 25.1928245,6.75433469 C23.9066204,5.27833469 23.209151,3.38037551 23.2336408,1.42290612 L17.3560898,1.42290612 L17.3560898,23.7086204 C17.3560898,27.7935184 15.1520082,29.9535184 12.416498,29.9535184 C11.694049,29.9611102 10.9789469,29.8107429 10.3213959,29.5124571 C9.6636,29.2144163 9.07951837,28.7758041 8.60955918,28.2272327 C8.1398449,27.6789061 7.79551837,27.0340898 7.60180408,26.3385796 C7.4078449,25.6430694 7.36890612,24.9132735 7.48743673,24.2008653 C7.60596735,23.4884571 7.87902857,22.8105796 8.28751837,22.2154776 C8.69625306,21.6198857 9.23037551,21.1212735 9.85241633,20.7546612 C10.474702,20.3878041 11.1694776,20.1617633 11.8882531,20.0924571 C12.6070286,20.023151 13.3324163,20.1122939 14.0129878,20.3535184 L14.0129878,14.3584163 C13.4889061,14.2430694 12.9530694,14.1862531 12.416498,14.1894367 L12.3917633,14.1894367 C10.2542939,14.1943347 8.16604898,14.8325388 6.39127347,16.0234776 C4.61649796,17.2149061 3.23429388,18.9051918 2.41976327,20.8812735 C1.60523265,22.8578449 1.39486531,25.0310694 1.8151102,27.1269061 C2.2351102,29.2227429 3.2671102,31.1469061 4.78033469,32.6564571 C6.29380408,34.1660082 8.22066122,35.1933551 10.3174776,35.6082122 C12.4142939,36.0230694 14.5870286,35.8073143 16.561151,34.9878857 C18.5355184,34.1682122 20.2226204,32.7820898 21.409151,31.0041306 C22.5959265,29.2264163 23.2289878,27.136702 23.228498,24.9992327 L23.228498,12.8155592 C25.5036,14.392702 28.2244163,15.134498 31.1289061,15.1886204 L31.1289061,9.68551837 C30.5869469,9.66568163 30.049151,9.5851102 29.5248245,9.44576327" fill="currentcolor"></path>
+                           
+                                <path d="M21.6220653,23.5764245 L21.6220653,11.392751 C23.8996163,12.9794449 26.6204327,13.7141388 29.5251673,13.7633633 L29.5251673,9.44581224 C28.0822286,9.04613878 26.7617388,8.29381224 25.6824735,7.25617959 C25.5110449,7.09724082 25.3494122,6.92826122 25.1926776,6.75438367 C24.7922694,6.4752 24.4126776,6.16736327 24.056351,5.83356735 C22.8186367,4.66026122 22.0041061,3.11030204 21.7396163,1.42540408 L17.3730857,1.42540408 L17.3730857,23.7111184 C17.3730857,27.7957714 15.1690041,29.9560163 12.4334939,29.9560163 C11.6569224,29.9538122 10.8918612,29.7681796 10.2005143,29.414302 C9.50941224,29.0601796 8.91186122,28.5476082 8.45635102,27.9182204 C7.49071837,27.3946286 6.72712653,26.5636898 6.2865551,25.5571592 C5.84573878,24.5508735 5.75341224,23.4260571 6.02377959,22.3609959 C6.29390204,21.2959347 6.91177959,20.3516082 7.77896327,19.6771592 C8.64639184,19.0027102 9.71365714,18.6365878 10.8122694,18.6365878 C11.3564327,18.6412408 11.8961878,18.7362612 12.4090041,18.9182204 L12.4090041,14.1894857 C10.304351,14.1921796 8.24647347,14.8093224 6.48786122,15.9657306 C4.72924898,17.1221388 3.3470449,18.7666286 2.51047347,20.6978939 C1.67390204,22.6291592 1.41969796,24.7627102 1.77896327,26.8362612 C2.13822857,28.9098122 3.09553469,30.8334857 4.53308571,32.3704653 C6.36271837,33.6848327 8.55945306,34.3906286 10.8122694,34.3884296 C16.7730857,34.3884296 21.6220653,30.7445878 21.6220653,23.5764245" fill="currentcolor"></path>
+                            </g>  
+                </svg></div></a>    -->
+
+                <!-- <svg width="38px" height="38px" viewBox="0 0 38 48"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/svg">
+
+                    <path d="M14.152 26.735C6.8588 26.735 0.922363 20.7986 0.922363 13.5053C0.922363 6.20801 6.8588 0.275635 14.152 0.275635C21.4453 0.275635 27.3817 6.21209 27.3817 13.5053C27.3817 20.7986 21.4453 26.735 14.152 26.735ZM14.152 1.20053C7.36811 1.20053 1.84727 6.72139 1.84727 13.5094C1.84727 20.2933 7.36811 25.8142 14.152 25.8142C20.936 25.8142 26.4568 20.2933 26.4568 13.5094C26.4568 6.71732 20.936 1.20053 14.152 1.20053Z" fill="currentcolor"></path>
+                        <path d="M38.0766847,15.8542954 C36.0693906,15.7935177 34.2504839,14.8341149 32.8791434,13.5466056 C32.1316475,12.8317108 31.540171,11.9694126 31.1415066,11.0151329 C30.7426093,10.0603874 30.5453728,9.03391952 30.5619062,8 L24.9731521,8 L24.9731521,28.8295196 C24.9731521,32.3434487 22.8773693,34.4182737 20.2765028,34.4182737 C19.6505623,34.4320127 19.0283477,34.3209362 18.4461858,34.0908659 C17.8640239,33.8612612 17.3337909,33.5175528 16.8862248,33.0797671 C16.4386588,32.6422142 16.0833071,32.1196657 15.8404292,31.5426268 C15.5977841,30.9658208 15.4727358,30.3459348 15.4727358,29.7202272 C15.4727358,29.0940539 15.5977841,28.4746337 15.8404292,27.8978277 C16.0833071,27.3207888 16.4386588,26.7980074 16.8862248,26.3604545 C17.3337909,25.9229017 17.8640239,25.5791933 18.4461858,25.3491229 C19.0283477,25.1192854 19.6505623,25.0084418 20.2765028,25.0219479 C20.7939283,25.0263724 21.3069293,25.1167239 21.794781,25.2902081 L21.794781,19.5985278 C21.2957518,19.4900128 20.7869423,19.436221 20.2765028,19.4380839 C18.2431278,19.4392483 16.2560928,20.0426009 14.5659604,21.1729264 C12.875828,22.303019 11.5587449,23.9090873 10.7814424,25.7878401 C10.003907,27.666593 9.80084889,29.7339663 10.1981162,31.7275214 C10.5953834,33.7217752 11.5748126,35.5530237 13.0129853,36.9904978 C14.4509252,38.4277391 16.2828722,39.4064696 18.277126,39.8028054 C20.2711469,40.1991413 22.3382874,39.9951517 24.2163416,39.2169177 C26.0948616,38.4384508 27.7002312,37.1209021 28.8296253,35.4300711 C29.9592522,33.7397058 30.5619062,31.7522051 30.5619062,29.7188301 L30.5619062,18.8324027 C32.7275484,20.3418321 35.3149087,21.0404263 38.0766847,21.0867664 L38.0766847,15.8542954 Z" fill="currentcolor"></path>
+                </svg> -->
+            </div>
+
+            <div id="categorias" class="categorias">
+                <div class="cate">
+                <div class="fila-1">
+
+                <a class="cat-tarjet" href="#">
+                    <img class="cat" src="/assets/cara boton.png" alt="">
+                    <p>Esferos & Llaveros</p>
+                </a>
+
+                <a class="cat-tarjet" href="#">
+                    <img class="cat" src="/assets/cara boton.png" alt="">
+                    <p>Promocionales</p>
+                </a>
+
+                <a class="cat-tarjet" href="#">
+                    <img class="cat" src="/assets/cara boton.png" alt="">
+                    <p>Hogar Plus +</p>
+                </a>
+
+                <a class="cat-tarjet" href="#">
+                    <img class="cat" src="/assets/cara boton.png" alt="">
+                    <p>Juguetes</p>
+                </a>
+
+                <a class="cat-tarjet" href="#">
+                    <img class="cat" src="/assets/cara boton.png" alt="">
+                    <p>Nuevos</p>
+                </a>
+
+            </div>
+
+            <!-- <div class="fila-2">
+                    <a class="cat-tarjet" href="#">
+                        <img class="cat" src="/assets/8-muebles.jpg" alt="">
+                        <p>Categoria 1</p>
+                    </a>
+
+                    <a class="cat-tarjet" href="#">
+                        <img class="cat" src="/assets/9-watch.jpg" alt="">
+                        <p>Categoria 2</p>
+                    </a>
+
+                    <a class="cat-tarjet" href="#">
+                        <img class="cat" src="/assets/10-audio2.jpg" alt="">
+                        <p>Categoria 3</p>
+                    </a>
+
+                    <a class="cat-tarjet" href="#">
+                        <img class="cat" src="/assets/12-llantas.jpg" alt="">
+                        <p>Categoria 4</p>
+                    </a>
+
+                </div> -->
+
+            </div>
+        </div>
+            <div class="spam">
+                <img src="/assets/banner prueba.png" alt="">
+            </div>
+            <div class="spam-2">
+                <div class="spam-img-g">
+                    <img src="/assets/banner pruebag.png" alt="">
+                </div>
+                <div class="galeria">
+                <div class="spam-img">
+                    <div class="img-spam">
+                    <img src="/assets/banner prueba5.png" alt="">
+                </div>
+                <div class="img-spam">
+                    <img src="/assets/banner prueba5.png" alt="">
+                </div>
+            </div>
+            <div class="spam-img-2">
+                <div class="img-spam-2">
+                    <img src="/assets/banner prueba5.png" alt="">
+                </div>
+                <div class="img-spam-2">
+                    <img src="/assets/banner prueba5.png" alt="">
+                </div>
+            </div>
+            </div>
+        </div>
+                <div class="spam">
+                    <img src="/assets/banner prueba.png" alt="">
+                </div>
+
+        <div id="catalogos" class="contenedor-cat">
+            <h2>Conoce Nuestros Catalogos</h2>
+            <div class="contenedor">
+
+                <div class="catalogo" id="catalogo1">
+                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/c7191c62-168a-4750-87d8-e2c6e67b0051?startpage=1&allowFullscreen=false" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+                
+                <div class="catalogo" id="catalogo2">
+                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/fc638b88-5e07-45b0-b2f3-92aec83b82ad?startpage=1&allowFullscreen=false" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="catalogo" id="catalogo3">
+                    <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/1995822a-c6e3-46f1-be6c-9cc340978406?startpage=1&allowFullscreen=false" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+
+                <div class="catalogo" id="catalogo4">
+                    <iframe style="border: 1px solid #777;" src="https://drive.google.com/file/d/1Fh0SL0SsQh6nObr372i9gZRSwVw6jLOg/view" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+
+            <div class="boton-catalogo">
+                <button onclick="mostrarCatalogo(1)">Catalogo Esferos y llaveros</button>
+                <button onclick="mostrarCatalogo(2)">Catalogo Promocionales</button>
+                <button onclick="mostrarCatalogo(3)">Catalogo Hogar Plus</button>
+                <button onclick="mostrarCatalogo(4)">Catalogo Servicios</button>
+            </div>
+        </div>
+
+        <div class="medios-pago">
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img src="/assets/pse-logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/pse-logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/pse-logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/pse-logo.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="/assets/pse-logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div id="contacto" class="formu">
+            <div class="laptop">
+                 <img class="laptop" src="/assets/laptop4.png" alt="laptop">
+                 <video src="/assets/video.mp4" autoplay loop></video>
+            </div>
+            <form action="post">
+                <h2>¿Necesitas Ayuda?</h2>
+
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Ingrese su nombre" required>
+
+                <label for="email">Correo</label>
+                <input type="email" placeholder="Ingrese el email" required>
+
+                <label for="id">Selecciona el tipo de documento</label>
+                <select name="Document" id="Document" required>
+
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="ti">Tarjeta de Identidad</option>
+                    <option value="cc">Cedula de Ciudadania</option>
+                    <option value="passport">Pasaporte</option>
+
+                </select>
+                <input type="number" required>
+
+                <label for="request">Elige tu tipo de solicitud</label>
+                <select name="request" id="request" required onchange="verificarQueja(this)">
+                    <option value="" hidden selected>Selecciona una opción</option>
+                    <option value="presio">Cotizar</option>
+                    <option value="question">Tengo una pregunta</option>
+                    <option value="queja">Queja o Reclamo</option>
+                </select>
+
+                <textarea name="message" id="message" cols="30" rows="12" placeholder="Escribe aqui tu mensaje" required></textarea>
+                <h3>¿Deseas Adjuntar un archivo?</h3>
+                <b><i><p>Opcional</p></b></i>
+                <input type="file" name="archivo" id="archivo">
+                <button type="submit">Enviar</button>
+
+            </form>
+        </div>
+
+        <div class="newsletter"></div>
+
+          <div class="ancla" onclick="scrollToTop()">
+            <!-- <img src="/assets/ANCLA@2x.png" alt="ancla"> -->
+            <img src="/assets/triangle.svg" alt="triangle">
+          </div>
+
+
+        </main>
+        <footer></footer>
+    <script src="/js/active-li.js"></script>
+    <script src="/js/li-too.js"></script>
+    <script src="/js/bar-social.js"></script>
+    <script src="/js/ancla.js"></script>
+    <script src="/js/anclas-index.js"></script>
+    <script src="/js/select-footer.js"></script>
+    <script src="/js/queja.js"></script>
+    <script src="/js/sliderf.js"></script>
+    <script src="/js/catalogos.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/fones.js"></script>
+    <script src="/js/sc.js"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/newsletter.js"></script>
+    <!-- <script src="/js/slider2.js"></script> -->
+</body>
+</html>

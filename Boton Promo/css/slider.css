@@ -1,0 +1,18 @@
+/* Estilos para los puntos */
+.dots {
+    display: flex;
+  }
+  
+  .dot {
+    width: 0px;
+    height: 0px;
+    background-color: #02a5a087;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease; /* Agregamos una transición a la propiedad transform */
+  }
+  
+  /* Estilo para el punto activo */
+  .dot.active {
+    transform: scale(1.2); /* Aumenta el tamaño del punto activo */
+  }

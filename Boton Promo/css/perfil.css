@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Montserrat&display=swap');
+
+body{
+    @media (min-width: 600px) {}
+}
+
+body{
+    font-size: 1rem;
+}
+
+.perfil-complete {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 100px;
+    background-color: #005CA5;
+    margin-top: 20px;
+    padding: 100px;
+    max-width: 100%;
+}
+
+.profile-field input{
+    background-color: #005CA5;
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.profile-field input[type="email"]::placeholder{
+    color: #fff;
+}
+
+.profile-field input[type="email"]:focus{
+    box-shadow: 0px 0px 0px 3px #007bff;
+    color: #232323;
+    background: white;
+    border: 1px solid white;
+    outline: none;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / 2;
+    background-color: #fff; 
+    border-radius: 20px;
+    max-width: 100%;
+    padding: 50px;
+}
+
+.links {
+   display: block;
+   justify-content: center;
+   margin: 0;
+}
+
+.links h2 {
+    text-align: center;
+}
+
+.links li {
+    text-align: left;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 10px;
+    width: 302px;
+}
+
+.img-link {
+    display: flex;
+    justify-content: center;
+}
+
+.links a {
+    color: #000;
+}
+
+.links a:active {
+    color: #fff;
+}
+
+.links li:hover {
+    cursor: pointer;
+}
+
+.links img {
+    width: 200px;
+    text-align: center;
+    align-items: end;
+}
+
+.links li:active {
+    cursor: pointer;
+    background-color: #ED2E34;
+    font-size: 19px;
+}
+
+.links a:active {
+    cursor: pointer;
+    background-color: #ED2E34;
+    font-size: 19px;
+}
+
+.content {
+    display: grid;
+    grid-column: 2 / 6;
+}
+
+.profile-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.profile-field {
+    display: grid;
+    gap: 10px;
+}
+
+.profile-field input{
+    border-radius: 10px;
+    width: 200px;
+    border: 0px;
+    padding: 5px;
+}
+
+.profile-field input:active{
+    border: 0px
+}
+
+.empresa {
+    display: flex;
+    gap: 10px;
+}
+
+.warning {
+    border-radius: 10px;
+    background-color: #ED2E34;
+    width: 100%;
+    padding: 0px 20px;  
+}
+
+.profile-details h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-details p{
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile-details label{
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile-details input{
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile-details i{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+}
+
+.profile-details a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile-details h2 {
+    font-family: 'Montserrat', sans-serif;   
+}
+
+.profile-details button{
+    font-family: 'Manrope', sans-serif;
+}
+
+.profile-details h3{
+    font-family: 'Manrope', sans-serif;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.saver {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    gap: 40px;
+}
+
+.saver button {
+    text-align: center;
+    background-color: darkblue;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 130px;
+    font-size: auto;
+}
+
+.saver button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: darkcyan;
+}
+
+.saver button:active {
+    transition: 0.3s;
+    /* width: 128px; */
+    font-size: 13px;
+    background-color: darkblue;
+}
+
+.telefono {
+    display: flex;
+    gap: 10px;
+}
+
+/* .options{
+    display: grid;
+    grid-column: 1;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+.options h2{
+    text-align: center;
+}
+
+.options ul li{ 
+    text-align: center;
+    gap: 10px;
+} */
+
+.links {
+    /* background-color: #fff; */
+    border-radius: 10px;
+    border: #000 solid 5px;
+}
+
+.profile-details {
+    /* background-color: rgba(255, 228, 196, 0.29); */
+    background-color: #fff;
+    line-height: 100%;
+}
+
+/* .profile-details {
+    background-color: rgba(219, 127, 255, 0.487);
+    line-height: 100%;
+} */
+
+.link-img{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.link-img a{
+    align-items: center;
+}
+
+.link-img img{
+    width: 30px;
+}
+
+
+.ti{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

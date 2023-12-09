@@ -1,0 +1,73 @@
+.formu {
+    display: flex;
+    justify-content: center; /* Coloca los elementos a los lados */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin: 100px 0px;
+    gap: 200px;
+}
+
+.laptop{
+    position: relative;
+    /* background: url('/assets/laptop3.png'); */
+    width: auto;
+    height: 600px;
+    text-align: center;
+    z-index: 1;
+}
+
+.laptop video{
+    position: absolute;
+    top: 7%;
+    left: 18%;
+    width: 520px;
+    height: 300px;
+    z-index: 0;
+}
+
+/* Estilos adicionales para el formulario */
+form {
+    background: #101820;
+    padding: 20px 50px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.formu h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.formu h3 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.formu label {
+    display: block;
+}
+
+.formu input, .formu select, .formu textarea, .formu button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.formu button {
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.formu button:hover {
+    background: #0056b3;
+}
+
+input[type="text"]::placeholder {
+    color: black;
+}

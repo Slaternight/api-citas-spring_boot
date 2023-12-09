@@ -1,0 +1,13 @@
+.contenedor {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .catalogo {
+    display: inline-block;
+    width: 100%;
+    /* Ajusta el ancho y otros estilos según tus necesidades */
+    /* Puedes usar 'display: none;' para ocultar los catálogos inicialmente */
+  }
+  

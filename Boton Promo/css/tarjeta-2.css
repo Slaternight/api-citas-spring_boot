@@ -1,0 +1,204 @@
+
+.container-tarjeta{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: white; 
+    padding: 50px;
+    max-width: 100%;
+    gap: 50px;
+}
+
+.tarjeta-p2{
+    text-align: center;
+    /* background-color: rgb(127, 187, 255); */
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    max-width: 400px;
+    box-shadow: 0 3px 6px rgb(68 68 68 / 50%);
+
+}
+
+
+.tarjeta-p2 img{
+    text-align: center;
+    width: 370px;
+    /* background-color: azure; */
+    padding: 10px;
+    border-radius: 30px;
+    filter:brightness(0.8);
+}
+
+.tarjeta-p2 h2{
+    /* background-color: beige; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tarjeta-p2 p{
+    /* background-color: brown; */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.description {
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 425px;
+    cursor: pointer;
+}
+
+.description.show-more {
+    white-space: normal;
+    cursor: pointer;
+}
+
+.tarjeta-2 button{
+    /* background-color: cadetblue; */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.comprar{
+   display: flex;
+   /* background-color: coral; */
+   padding: 10px;
+   border-radius: 10px;
+   gap: 40px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.presio{
+   display: flex;
+   /* background-color: darkgoldenrod; */
+   border-radius: 10px;
+   padding: 10px;
+   color: coral;
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 28px;
+   vertical-align: bottom;
+}
+
+.btn-comprar{
+    display: flex;
+}
+
+.swiper-container-p2 {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    /* border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    margin: 0;
+    background-clip: padding-box;
+    background-color: rgba(255,255,255,0.9);
+    border-color: rgba(0,0,0,0.08);
+    box-shadow: 0 0 0 1px transparent,0 0 0 4px transparent,var(--e-swdx-p);
+    transition: transform 0.25s var(--itr-yy-z); */
+    opacity: .8;
+}
+
+.swiper-button-next{
+    margin-right: 50px;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    opacity: 1;
+}
+
+.swiper-button-next:after{
+ font-size: 20px !important;
+ font-weight: 900 !important;
+ content: "next" !important;
+}
+
+.swiper-button-prev:after{
+    font-size: 20px !important;
+    font-weight: 900 !important;
+    content: "prev" !important;
+    width: 100px !important;
+}
+
+:root { --swiper-theme-color: #D0CFCD !important};
+
+/* Estilo para los dots del carrusel Swiper */
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #ef0000 !important;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #ff0000;
+  }
+  
+  #btn-azul{
+    background-color: rgb(3, 76, 141);
+    padding: 13px 18px;
+    cursor: pointer;
+    transition: .20s;
+  }
+
+  #btn-azul:hover{
+    border: solid 3px black;
+  }
+
+  #btn-azul:active{
+    padding: 10px 15px;
+    transition: .20s;
+    opacity: .8;
+  }
+
+  #btn-rojo{
+    background-color: rgb(203, 12, 12);
+    padding: 13px 18px;
+    cursor: pointer;
+    transition: .20s;
+  }
+
+  #btn-rojo:hover{
+    border: solid 3px black;
+  }
+
+  #btn-rojo:active{
+    padding: 10px 15px;
+    transition: .20s;
+    opacity: .8;
+  }
+
+  #btn-verde{
+    background-color: rgb(10, 216, 52);
+    padding: 13px 18px;
+    cursor: pointer;
+    transition: .20s;
+  }
+
+  #btn-verde:hover{
+    border: solid 3px black;
+  }
+
+  #btn-verde:active{
+    padding: 10px 15px;
+    transition: .20s;
+    opacity: .8;
+  }
+
+  .active-color-button {
+  border: 2px solid black;
+}
